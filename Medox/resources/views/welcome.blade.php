@@ -22,7 +22,7 @@
     <a href="/signup" class="symbol"> <img src="image/weblogo_back.png" alt="" srcset="" width="auto" height="auto" id="logo-top">  </a>
 
     <nav class="navbar">
-        <a href="#home">Home</a>
+        <a href="#home">Dashboard</a>
         <a href="#services">Services</a>
         <a href="#about">About</a>
         <a href="/signup">Account </a>
@@ -39,7 +39,7 @@
 <section class="home" id="home">
 
     <div class="image">
-        <img src="image/home-img.svg" alt="">
+        <img src="image/dashboard-img.svg" alt="">
     </div>
 
     <div class="content">

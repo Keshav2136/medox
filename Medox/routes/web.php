@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -17,21 +18,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/signup', function () {
-    return view('signup-form');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
+
+Route::middleware('auth')->group(function () {
+    Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
+    Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
+    Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
-Route::get('/login', function () {
-    return view('login');
-});
-
-Route::get('/doctor-signup', function () {
-    return view('doctor-signup');
-});
-
-use Illuminate\Support\Facades\DB;
-
-Route::get('/test-db-connection', function () {
-    $results = DB::select('select * from users');
-    return view('test-db-connection', ['results' => $results]);
-});
+require __DIR__.'/auth.php';
