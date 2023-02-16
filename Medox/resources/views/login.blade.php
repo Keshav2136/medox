@@ -5,9 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/signup.css">
+    <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
-    <title>Login | Ludiflex - youtube channel</title>
+    <title>Login page</title>
 </head>
 <body>
     <div class="wrapper">
@@ -22,7 +24,7 @@
                 </div>
                 <div class="col-md-6 right">
                      <div class="input-box">
-                        <header>Create account</header>
+                        <header><h1>Sign in</h1></header>
                         <div class="input-field">
                             <input type="text" class="input" id="email" required autocomplete="off">
                             <label for="email">Email</label>
@@ -31,16 +33,13 @@
                             <input type="password" class="input" id="password" required>
                             <label for="password">Password</label>
                         </div>
+                        
                         <div class="input-field">
-                            <input type="text" class="input" id="email" required autocomplete="off">
-                            <label for="number"required>Phone number</label>
-                        </div>
-                        <div class="input-field">
-                            <input type="submit" class="submit" value="Sign Up">
+                            <input type="submit" class="submit" value="Login">
                             
                         </div>
                         <div class="signin">
-                            <span>Already have an account? <a href="/login">Log in here</a></span>
+                            <span>Don't have an account? <a href="#">Register here</a></span>
                         </div>
                      </div>
                 </div>
