@@ -25,7 +25,7 @@
         <a href="#home">Dashboard</a>
         <a href="#services">Services</a>
         <a href="#about">About</a>
-        <a href="/signup">Account </a>
+        <a href="/register">Account </a>
     </nav>
 
     <div id="menu-btn" class="fas fa-bars"></div>
