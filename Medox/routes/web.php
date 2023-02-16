@@ -32,3 +32,5 @@ Route::middleware('auth')->group(function () {
 });
 
 require __DIR__.'/auth.php';
+
+Route::post('/save-patient-details', 'PatientDetailsController@store')->name('save.patient.details');
